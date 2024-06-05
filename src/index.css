@@ -16,6 +16,7 @@ button {
 
 #root {
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
   padding: 14px;
@@ -133,10 +134,20 @@ footer i{
 
 
 @media (max-width: 640px) {
+  #root{
+    width: 100%;
+    height: 100%;
+  }
+
+  .title h1{
+    color: white;
+    font-size: 2rem ;
+  }
+
 
   header button,
   header input {
-    font-size: 1em;
+    font-size: .7em;
   }
 
   p {
