@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Todoinput from "./components/Todoinput";
 import TodoList from "./components/TodoList";
+import ToDoTitle from "./components/ToDoTitle";
+import Footer from "./components/Footer";
 
 function App() {
   //   let todos = [
@@ -51,6 +53,7 @@ function persistData(newList){
   }, []);
   return (
     <>
+    <ToDoTitle/>
       <Todoinput
         handleAddTodos={handleAddTodos}
         todosValue={todosValue}
@@ -60,7 +63,8 @@ function persistData(newList){
         handleEditTodos={handleEditTodos}
         handleDeleteTodos={handleDeleteTodos}
         todos={todos}
-      />
+        />
+        <Footer/>
     </>
   );
 }

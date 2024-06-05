@@ -1,5 +1,4 @@
 import React from "react";
-import Todoinput from "./Todoinput";
 
 function TodoCard(props) {
   const { children, handleDeleteTodos, index, handleEditTodos } = props;
